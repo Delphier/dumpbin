@@ -1,5 +1,6 @@
 # dumpbin.exe
 Microsoft COFF Binary File Dumper - Extract from Visual Studio Community 2022
+
 Download from [Releases](../../releases).
 
 ## Usage
