@@ -1,0 +1,2 @@
+python dumpbin.py
+pause
