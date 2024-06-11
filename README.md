@@ -1,7 +1,11 @@
 # dumpbin.exe
-Microsoft COFF Binary File Dumper - Extract from Visual Studio Community 2022
+Microsoft COFF Binary File Dumper: Extract from Visual Studio MSVC Tools.
 
-Download from [Releases](../../releases).
+## Download
+Download from [Releases](../../releases) or build latest version:
+```
+python dumpbin.py
+```
 
 ## Usage
 
