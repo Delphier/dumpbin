@@ -51,7 +51,7 @@ print(f"Creating Zip in {RELEASES.resolve()}...")
 BIN = get_sub_dirs(ARCHIVES / "Contents/VC/Tools/MSVC")[0] / "bin/Hostx64/x64"
 RELEASES.mkdir(exist_ok=True)
 files = ["dumpbin.exe", "link.exe", "link.exe.config", "tbbmalloc.dll", "mspdbcore.dll"]
-with zipfile.ZipFile(RELEASES / f"dumpbin-{version}-x64.zip", "w", zipfile.ZIP_LZMA) as z:
+with zipfile.ZipFile(RELEASES / f"dumpbin-{version}-x64.zip", "w", zipfile.ZIP_DEFLATED) as z:
 	for f in files:
 		path = BIN / f
 		z.write(path, path.name)
