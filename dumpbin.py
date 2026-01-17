@@ -15,7 +15,7 @@ def download(url):
 def get_sub_dirs(path):
 	return [x for x in path.iterdir() if x.is_dir()]
 
-MANIFEST_URL = "https://aka.ms/vs/17/release/channel"
+MANIFEST_URL = "https://aka.ms/vs/stable/channel"
 print("Checking Visual Studio Manifest...")
 chman = json.loads(download(MANIFEST_URL))
 vsman_url = chman["channelItems"][0]["payloads"][0]["url"]
